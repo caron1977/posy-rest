@@ -4,7 +4,7 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <dependent-module archiveName="posy-api-3.6.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/posy-api/posy-api">
+        <dependent-module archiveName="posy-api-3.7.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/posy-api/posy-api">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="student-api-psql-4.5.0a.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/student-api-psql/student-api-psql">
