@@ -18,7 +18,7 @@ import de.fhws.exam.model.ExamGradeAverage;
 import de.fhws.exam.model.ExamSchedule;
 import de.fhws.exam.model.GradesWorkflow;
 import de.fhws.posy.dto.RecordGradesCSVRequest;
-import de.fhws.posy.dto.RecordGradesManyRequest;
+import de.fhws.posy.rest.models.RecordGradesManyRequest;
 
 public class PosyRestServiceTest {
 
