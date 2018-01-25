@@ -3,11 +3,11 @@ package de.fhws.posy.rest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.fhws.exam.enums.ExamGradeTypes;
 import de.fhws.posy.api.entities.ExamGrade;
 import de.fhws.posy.api.entities.ExamGradeAverage;
 import de.fhws.posy.api.entities.ExamGradeInteger;
 import de.fhws.posy.api.entities.ExamGradeNoGrade;
+import de.fhws.posy.api.enums.ExamGradeTypes;
 
 public class ExamGradeDeserializeHelper {
 
