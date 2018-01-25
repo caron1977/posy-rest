@@ -14,11 +14,11 @@ import javax.ws.rs.core.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.fhws.exam.exceptions.PosyApiCompositeException;
-import de.fhws.exam.exceptions.PosyApiException;
-import de.fhws.exam.exceptions.PosyApiScheduleException;
 import de.fhws.posy.api.entities.ExamRegistration;
 import de.fhws.posy.api.entities.ExamSchedule;
+import de.fhws.posy.api.exceptions.PosyApiCompositeException;
+import de.fhws.posy.api.exceptions.PosyApiException;
+import de.fhws.posy.api.exceptions.PosyApiScheduleException;
 import de.fhws.posy.dto.FindExamRegistrationsRequest;
 import de.fhws.posy.dto.FindExamRegistrationsResponse;
 import de.fhws.posy.dto.GrantedRequest;
