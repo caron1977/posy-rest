@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="posy-rest">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="posy-api-3.6.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/posy-api/posy-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="student-api-psql-4.5.0a.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/student-api-psql/student-api-psql">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="student-api-commons-4.5.0a.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/student-api-commons/student-api-commons">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="fhws-master-api-3.4.6b.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/fhws-master-api/fhws-master-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="lantel-api-4.5-restful.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/lantel-api/lantel-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="posy-rest"/>
+        <property name="java-output-path" value="/posy-rest/target/classes"/>
+    </wb-module>
+</project-modules>
