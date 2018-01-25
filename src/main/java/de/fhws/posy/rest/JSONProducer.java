@@ -8,7 +8,7 @@ import javax.ws.rs.ext.Provider;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 
-import de.fhws.exam.model.ExamGrade;
+import de.fhws.posy.api.entities.ExamGrade;
 
 /**
  * configure the production of JSON objects for example configure the serialization of java date objects

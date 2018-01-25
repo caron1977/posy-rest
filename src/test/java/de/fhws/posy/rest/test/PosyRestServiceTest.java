@@ -14,9 +14,9 @@ import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 
 import de.fhws.exam.enums.AverageGradesEnum;
 import de.fhws.exam.enums.WorkflowStatus;
-import de.fhws.exam.model.ExamGradeAverage;
-import de.fhws.exam.model.ExamSchedule;
-import de.fhws.exam.model.GradesWorkflow;
+import de.fhws.posy.api.entities.ExamGradeAverage;
+import de.fhws.posy.api.entities.ExamSchedule;
+import de.fhws.posy.api.entities.GradesWorkflow;
 import de.fhws.posy.dto.RecordGradesCSVRequest;
 import de.fhws.posy.rest.models.RecordManyGradesRequest;
 

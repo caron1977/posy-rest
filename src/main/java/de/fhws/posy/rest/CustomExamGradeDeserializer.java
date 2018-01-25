@@ -11,7 +11,7 @@ import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
 
-import de.fhws.exam.model.ExamGrade;
+import de.fhws.posy.api.entities.ExamGrade;
 
 public class CustomExamGradeDeserializer extends JsonDeserializer<ExamGrade> {
 
