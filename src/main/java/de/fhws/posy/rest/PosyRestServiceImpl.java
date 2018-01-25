@@ -26,7 +26,7 @@ import de.fhws.posy.dto.GrantedSchedulesResponse;
 import de.fhws.posy.rest.exceptions.SimpleRestCompositeException;
 import de.fhws.posy.rest.exceptions.SimpleRestException;
 import de.fhws.posy.rest.exceptions.SimpleRestScheduleException;
-import de.fhws.posy.rest.models.RecordGradesManyRequest;
+import de.fhws.posy.rest.models.RecordManyGradesRequest;
 import de.fhws.posy.services.PosyService;
 import de.fhws.posy.services.RecordGradesService;
 
@@ -114,7 +114,7 @@ public class PosyRestServiceImpl {
 	@Path("/record-many-grades")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response recordManyGrades(RecordGradesManyRequest request) {
+	public Response recordManyGrades(RecordManyGradesRequest request) {
 
 		try {
 

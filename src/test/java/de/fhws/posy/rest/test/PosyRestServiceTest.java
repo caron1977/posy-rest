@@ -18,7 +18,7 @@ import de.fhws.exam.model.ExamGradeAverage;
 import de.fhws.exam.model.ExamSchedule;
 import de.fhws.exam.model.GradesWorkflow;
 import de.fhws.posy.dto.RecordGradesCSVRequest;
-import de.fhws.posy.rest.models.RecordGradesManyRequest;
+import de.fhws.posy.rest.models.RecordManyGradesRequest;
 
 public class PosyRestServiceTest {
 
@@ -66,7 +66,7 @@ public class PosyRestServiceTest {
 	@Test
 	public void testRecordManyGrades() throws Exception {
 
-		RecordGradesManyRequest rgmr = new RecordGradesManyRequest();
+		RecordManyGradesRequest rgmr = new RecordManyGradesRequest();
 
 		// 1. schedule
 		{
