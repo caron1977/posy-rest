@@ -24,6 +24,9 @@ import de.fhws.posy.dto.FindExamRegistrationsResponse;
 import de.fhws.posy.dto.GrantedRequest;
 import de.fhws.posy.dto.GrantedSchedulesResponse;
 import de.fhws.posy.dto.RecordGradesManyRequest;
+import de.fhws.posy.rest.exceptions.SimpleRestCompositeException;
+import de.fhws.posy.rest.exceptions.SimpleRestException;
+import de.fhws.posy.rest.exceptions.SimpleRestScheduleException;
 import de.fhws.posy.services.PosyService;
 import de.fhws.posy.services.RecordGradesService;
 
