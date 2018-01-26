@@ -12,13 +12,14 @@ import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
 
 import de.fhws.posy.api.entities.ExamGrade;
+import de.fhws.posy.rest.models.IExamGrade;
 
-public class CustomExamGradeDeserializer extends JsonDeserializer<ExamGrade> {
+public class CustomExamGradeDeserializer extends JsonDeserializer<IExamGrade> {
 
 	private transient static final Logger logger = LoggerFactory.getLogger(CustomExamGradeDeserializer.class);
 
 	@Override
-	public ExamGrade deserialize(JsonParser jp, DeserializationContext ctxt) throws IOException, JsonProcessingException {
+	public IExamGrade deserialize(JsonParser jp, DeserializationContext ctxt) throws IOException, JsonProcessingException {
 
 		logger.debug("try deserializing deputat item ...");
 

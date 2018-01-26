@@ -8,7 +8,8 @@ import javax.ws.rs.ext.Provider;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 
-import de.fhws.posy.api.entities.ExamGrade;
+import de.fhws.posy.rest.models.IExamGrade;
+import de.fhws.posy.rest.models.IExamPeriod;
 
 /**
  * configure the production of JSON objects for example configure the serialization of java date objects
@@ -26,10 +27,11 @@ public class JSONProducer implements ContextResolver<ObjectMapper> {
 	public JSONProducer() throws Exception {
 
 		SimpleModule module = new SimpleModule();
-		// de-serialize item list of DeputatHead
-		module.addDeserializer(ExamGrade.class, new CustomExamGradeDeserializer());
+		// de-serialize exam grade
+		module.addDeserializer(IExamGrade.class, new CustomExamGradeDeserializer());
+		module.addDeserializer(IExamPeriod.class, new CustomExamPeriodDeserializer());
 		this.json = new ObjectMapper()
-		// .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
+				// .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
 				.setDateFormat(new RestServiceDateFormat()).registerModule(module);
 
 	}
